@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A functional switch to replace switch statements",
   "main": "dist/index.js",
+  "types": "dist/imdex.d.ts",
   "author": "Andreas Fyrstelin Fuller",
   "license": "MIT",
   "scripts": {
