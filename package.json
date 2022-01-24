@@ -1,6 +1,6 @@
 {
   "name": "cute-switch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A functional switch to replace switch statements",
   "main": "dist/index.js",
   "author": "Andreas Fyrstelin Fuller",
