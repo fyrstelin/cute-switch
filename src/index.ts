@@ -10,7 +10,7 @@ type SwitchOn<T, TProps, TProp extends keyof T, U> = {
 }
 
 type Switch<T, U> = {
-  case: <R>(value: T, handler: () => R) => Switch<T, U | R>
+  case: <C extends T, R>(value: C, handler: () => R) => Switch<Exclude<T, C>, U | R>
   match: <C extends T, R>(type: Type<C>, handler: (value: C) => R) => Switch<Exclude<T, C>, U | R>
   defaultTo: <R>(handler: () => R) => U | R
   orThrow: (errFn?: () => Error) => U
